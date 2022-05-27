@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Deneme extends StatelessWidget {
-  List<String> items = <String>["red", "blue", "dsfs"];
-  String dropSelected = "red";
+class Istatistik extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _Istatistik();
+  }
+}
+
+class _Istatistik extends State {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("deneme sayfası"));
+    return Text("İstatistik Sayfası");
   }
 }
