@@ -3,10 +3,15 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:moodlyy/pages/ayarlar.dart';
+import 'package:moodlyy/pages/componentler/tavsiyeler.dart';
+import 'package:moodlyy/pages/gunlukler.dart';
+import 'package:moodlyy/pages/hedefler.dart';
 
 import 'package:moodlyy/pages/istatistik.dart';
 import 'package:moodlyy/pages/maindesign.dart';
 import 'package:moodlyy/pages/profil.dart';
+import 'package:moodlyy/pages/yardim.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,7 +33,16 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State {
-  final List<Widget> screens = [MainDesign(), Deneme(), Profil()];
+  final List<Widget> screens = [
+    MainDesign(),
+    Istatistik(),
+    Profil(),
+    Gunlukler(),
+    Hedefler(),
+    Tavsiyeler(),
+    Ayarlar(),
+    Yardim()
+  ];
   Widget currentScreen = MainDesign();
   final PageStorageBucket bucket = PageStorageBucket();
   int currentTab = 0;
@@ -104,7 +118,7 @@ class _HomeScreenState extends State {
                     onPressed: () {
                       setState(
                         () {
-                          currentScreen = Deneme();
+                          currentScreen = Istatistik();
                           currentTab = 1;
                         },
                       );
@@ -179,22 +193,46 @@ class _HomeScreenState extends State {
           ListTile(
             leading: Icon(Icons.draw),
             title: Text("Günlükler"),
-            onTap: () => null,
+            onTap: () {
+              setState(() {
+                currentScreen = Gunlukler();
+                currentTab = 3;
+                Navigator.pop(context);
+              });
+            },
           ),
           ListTile(
             leading: Icon(Icons.done_all_sharp),
             title: Text("Hedefler"),
-            onTap: () => null,
+            onTap: () {
+              setState(() {
+                currentScreen = Hedefler();
+                currentTab = 4;
+                Navigator.pop(context);
+              });
+            },
           ),
           ListTile(
             leading: Icon(Icons.align_vertical_bottom),
             title: Text("İstatistikler"),
-            onTap: () => null,
+            onTap: () {
+              setState(() {
+                currentScreen = Istatistik();
+                currentTab = 1;
+                Navigator.pop(context);
+              });
+            },
           ),
           ListTile(
             leading: Icon(Icons.favorite),
             title: Text("Tavsiyeler"),
-            onTap: () => null,
+            onTap: () {
+              setState(() {
+                currentScreen = Tavsiyeler();
+                currentTab = 5;
+                Navigator.pop(context);
+              });
+            },
           ),
           Divider(
             color: Colors.black,
@@ -205,12 +243,24 @@ class _HomeScreenState extends State {
           ListTile(
             leading: Icon(Icons.settings),
             title: Text("Ayarlar"),
-            onTap: () => null,
+            onTap: () {
+              setState(() {
+                currentScreen = Ayarlar();
+                currentTab = 6;
+                Navigator.pop(context);
+              });
+            },
           ),
           ListTile(
             leading: Icon(Icons.help),
             title: Text("Yardım"),
-            onTap: () => null,
+            onTap: () {
+              setState(() {
+                currentScreen = Yardim();
+                currentTab = 7;
+                Navigator.pop(context);
+              });
+            },
           ),
         ],
       ),

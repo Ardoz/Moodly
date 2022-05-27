@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/damladincturk/Documents/GitHub/moodly/moodly/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
+            "outputFile": "/Users/damladincturk/Documents/GitHub/Moodly/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
             "map": [
                 {
                     "source": "/Users/damladincturk/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/res/values-uk/values-uk.xml",

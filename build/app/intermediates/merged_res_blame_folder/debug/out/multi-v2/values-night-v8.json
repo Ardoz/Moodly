@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/damladincturk/Documents/GitHub/moodly/moodly/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/damladincturk/Documents/GitHub/Moodly/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/damladincturk/Documents/GitHub/moodly/moodly/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/damladincturk/Documents/GitHub/Moodly/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
